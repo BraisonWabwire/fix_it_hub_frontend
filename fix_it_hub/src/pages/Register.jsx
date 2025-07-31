@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import './Register.css'; 
+import { useNavigate, Link } from 'react-router-dom';
+import './Register.css';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ const Register = () => {
     try {
       const response = await axios.post('http://127.0.0.1:8000/api/register/', formData);
       setSuccess('Registration successful! Redirecting to login...');
-      setTimeout(() => navigate('/login'), 2000); // Redirect after 2 seconds
+      setTimeout(() => navigate('/login'), 2000);
     } catch (err) {
       if (err.response) {
         setError(err.response.data);
@@ -97,7 +97,6 @@ const Register = () => {
           <select name="role" value={formData.role} onChange={handleChange}>
             <option value="client">Client</option>
             <option value="handyman">Handyman</option>
-            <option value="admin">Admin</option>
           </select>
         </div>
         <div className="form-group">
@@ -114,7 +113,10 @@ const Register = () => {
         </button>
       </form>
       <p>
-        Already have an account? <a href="/login">Login here</a>
+        Already have an account? <Link to="/login">Login here</Link>
+      </p>
+      <p>
+        Register as an admin? <Link to="/admin-register">Admin Registration</Link>
       </p>
     </div>
   );

@@ -1,0 +1,80 @@
+.client-home-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.side-nav {
+  background: linear-gradient(to bottom, #4caf50, #8bc34a);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin-right: 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #e05e43;
+}
+
+.main-content {
+  flex: 1;
+  background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.error-message {
+  color: red;
+}
+
+.profiles-list {
+  margin-top: 20px;
+}
+
+.profile-card {
+  background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h4 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  margin: 5px 0;
+}
+
+.profile-card strong {
+  color: #333;
+}
